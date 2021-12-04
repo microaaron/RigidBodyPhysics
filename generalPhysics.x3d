@@ -2,7 +2,7 @@
 <!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.2//EN" "http://www.web3d.org/specifications/x3d-3.3.dtd">	
 <X3D profile='Immersive' version='3.3' xmlns:xsd='http://www.w3.org/2001/XMLSchema-instance' xsd:noNamespaceSchemaLocation='http://www.web3d.org/specifications/x3d-3.3.xsd'>
   <Scene>
-	  <Group>
+  <Group>
 
     <Transform DEF='BALL-TRANS' translation='0.0 5 0.0' rotation='0 0 1 0'>
       <Shape>
@@ -93,6 +93,6 @@
         <CollidableShape USE='PLANE-GEOM' containerField='collidables' enabled='true' rotation='0 0 1 0' translation='0 0 0'></CollidableShape>
       </CollisionCollection>
     </CollisionSensor>
-	</Group>
+  </Group>
   </Scene>  			
 </X3D>
