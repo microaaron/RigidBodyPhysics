@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.2//EN" "http://www.web3d.org/specifications/x3d-3.2.dtd">
+
+<X3D profile="Immersive" version="3.2">
+  <head>
+    <component name="RigidBodyPhysics" level="2"/>
+  </head>
+  <Scene>
+    <Group>
+      <CollidableShape DEF="BOX-GEOM-1">
+        <Shape containerField='shape'>
+          <Appearance>
+            <Material emissiveColor="1 0 0"/>
+          </Appearance>
+          <Box size="0.3 0.02 0.02"/>
+        </Shape>
+      </CollidableShape>
+      <CollidableShape DEF="BOX-GEOM-2">
+        <Shape containerField='shape'>
+          <Appearance>
+            <Material emissiveColor="0 0 1"/>
+          </Appearance>
+          <Box size="0.3 0.02 0.02"/>
+        </Shape>
+      </CollidableShape>
+      <CollidableShape DEF="BOX-GEOM-3">
+        <Shape containerField='shape'>
+          <Appearance>
+            <Material emissiveColor="0 1 0"/>
+          </Appearance>
+          <Box size="0.3 0.02 0.02"/>
+        </Shape>
+      </CollidableShape>
+    </Group>
+    <RigidBodyCollection>
+      <RigidBody DEF="BODY-1" containerField='bodies' mass="10000">
+        <CollidableShape USE="BOX-GEOM-1"/>
+      </RigidBody>
+      <RigidBody DEF="BODY-2" containerField='bodies' position="0.3 0 0">
+        <CollidableShape USE="BOX-GEOM-2"/>
+      </RigidBody>
+      <RigidBody DEF="BODY-3" containerField='bodies' mass="0.1" position="0.52 0 0.2">
+        <CollidableShape USE="BOX-GEOM-3"/>
+      </RigidBody>
+    </RigidBodyCollection>
+  </Scene>
+</X3D>
