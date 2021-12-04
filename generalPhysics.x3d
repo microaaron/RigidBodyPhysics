@@ -26,7 +26,7 @@
 						<appearance>
 							<material emissiveColor='0.0 0.0 1.0'></material>
 						</appearance>
-						<box size='1 1 1'/></box>
+						<box size='1 1 1'></box>
 					</shape>
 				</transform>
 				<transform DEF='PLANE-TRANS' translation='-3 5 8' rotation='0 0 1 0' scale='1 1 1'>
@@ -57,7 +57,7 @@
 				<collidableShape DEF='BOX-GEOM' enabled='true' rotation='0 0 1 0' translation='5 15 0' containerField='children'>
 					<transform USE='BOX-TRANS' containerField='physics'></transform>
 					<shape containerField='Shape'>
-						<box size='1 1 1'/></box>
+						<box size='1 1 1'></box>
 					</shape>
 				</collidableShape>
 				<collidableShape DEF='PLANE-GEOM' translation='-3 5 -5' rotation='0 0 1 0'>
